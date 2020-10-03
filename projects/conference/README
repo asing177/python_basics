@@ -1,0 +1,12 @@
+Conference Track Management
+---------------------------
+
+
+
+To Install Application
+---------------------------
+pip install -e .
+
+To Run Unit Tests
+------------
+Move to tests folder and run pytest.
