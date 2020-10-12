@@ -1,5 +1,5 @@
 # Get the longest palindrome prefixes
-# if the prefix has 2 or more chars then cut the longet prefix from string
+# if the prefix has 2 or more chars then cut the longest prefix from string
 # else return the original string
 
 str = "codesignal"
