@@ -1,3 +1,7 @@
+# Get the longest palindrome prefixes
+# if the prefix has 2 or more chars then cut the longet prefix from string
+# else return the original string
+
 str = "codesignal"
 str1 = "aaacodecdoc"
 
