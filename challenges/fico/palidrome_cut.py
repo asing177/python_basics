@@ -1,18 +1,33 @@
-str = "aaacodedoc"
+str = "codesignal"
+str1 = "aaacodecdoc"
 
 def palindromeCutting(str):
-    prefix = get_palindrome_prefix(str)
-    print(prefix)
-
-
-
-def get_palindrome_prefix(str):
-    prefix = str[0]+str[1]+str[2]+str[3]
-    if prefix == prefix[::-1]:
-        return prefix
+    prefix = longest_palindrome(str)
+    if len(prefix) >= 2:
+        new_string = remove_prefix(str, prefix)
     else:
-        pass
+        new_string = str
+
+    return new_string
+
+
+def remove_prefix(str, prefix):
+    if str.startswith(prefix):
+        return str[len(prefix):]
+    return str
+
+def longest_palindrome(str):
+    max = 0
+    for length in range(0,len(str)):
+        prefix = str[0:length]
+        temp = prefix
+        temp2 = temp[::-1]
+        if temp == temp2:
+             max = length
+             palidrome = prefix
+
+    return palidrome
 
 
 
-palindromeCutting(str)
+print(palindromeCutting(str))
