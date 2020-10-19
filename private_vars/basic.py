@@ -19,6 +19,7 @@ class MappingSubclass(Mapping):
 
 
 
-m =MappingSubclass({"a" : 1})
-m.update("a" , [1,2])
+m =Mapping({"a" : 1})
+#Name Mangling for private vars
+m._Mapping__update([1,2])
 print(m.items_list)
