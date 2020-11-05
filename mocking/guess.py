@@ -8,6 +8,3 @@ def guess_number(num):
         return True
     else:
         return False
-
-
-print(guess_number(4))
