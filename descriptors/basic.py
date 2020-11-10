@@ -17,6 +17,6 @@ class Test(object):
     name = Descriptor()
 
 
-g = Test()
-g.name = "hello"
-print(g.name)
+t = Test()
+t.name = "hello"
+print(t.name)
