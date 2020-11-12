@@ -23,11 +23,7 @@ result = [[0, 0, 0, 0],
 
 def matmul(A,B,result):
     for i in range(len(A)):
-
-        # iterating by coloum by B
         for j in range(len(B[0])):
-
-            # iterating by rows of B
             for k in range(len(B)):
                 result[i][j] += A[i][k] * B[k][j]
 
